@@ -1,12 +1,11 @@
 <html>
 	<head>
 		<script type="text/javascript">
-			function Send() {
+			function Send() { /* A small thing to save the siggy */
 				localStorage["RBLX_Siggy"] = document.getElementById("sig").value;
 				alert("Saved");
 			}
-
-			function Receive() {
+			function Receive() { /* Grab the siggy from localStorage if it exists */
 				document.getElementById("sig").value = localStorage["RBLX_Siggy"];
 			}
 		</script>
