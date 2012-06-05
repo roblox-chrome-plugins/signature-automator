@@ -9,7 +9,7 @@
 	"background_page": "back.html",
 	"content_scripts": [
 		{
-			"matches": ["http://*.roblox.com/Forum/AddPost.aspx?ForumID=*","http://*.roblox.com/Forum/ShowPost.aspx?PostID=*"],
+			"matches": ["http://*.roblox.com/Forum/AddPost.aspx?*"],
 			"js": ["post.js"]
 
 		}
