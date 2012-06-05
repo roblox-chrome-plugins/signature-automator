@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<script type="text/javascript">
+			function Send() {
+				localStorage["RBLX_Siggy"] = document.getElementById("sig").value;
+				alert("Saved");
+			}
+
+			function Receive() {
+				document.getElementById("sig").value = localStorage["RBLX_Siggy"];
+			}
+		</script>
+	</head>
+	<body>
+		<input id="sig" type="textarea">
+		</input>
+		<br/>
+		<input type="submit"value="Update Siggy"onclick="Send()">
+		</input>
+		<script type="text/javascript">Receive();</script>
+	</body>
+</html>

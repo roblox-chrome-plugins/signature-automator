@@ -1,0 +1,14 @@
+<html>
+	<head>
+		<script type="text/javascript">
+			chrome.extension.onRequest.addListener( function(request, sender, sendResponse) {
+				if (request.method == "getSiggy")
+					sendResponse({
+						status: localStorage['RBLX_Siggy']
+					});
+				else
+					sendResponse({}); 
+			});
+		</script>
+	</head>
+</html>
