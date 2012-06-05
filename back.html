@@ -2,12 +2,12 @@
 	<head>
 		<script type="text/javascript">
 			chrome.extension.onRequest.addListener( function(request, sender, sendResponse) {
-				if (request.method == "getSiggy")
+				if (request.method == "getSiggy") /* If they asked for the siggy */
 					sendResponse({
-						status: localStorage['RBLX_Siggy']
+						status: localStorage['RBLX_Siggy'] /* Give it to them! */
 					});
 				else
-					sendResponse({}); 
+					sendResponse({}); /* We dun know what you want, so we give you nothin */
 			});
 		</script>
 	</head>
