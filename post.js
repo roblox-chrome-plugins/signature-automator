@@ -23,3 +23,4 @@ if (el) { /* If for some reason we still didn't find it, we're kinda screwed */
         }
 	});
 }
+document.getElementById('ctl00_cphRoblox_Createeditpost1_PostForm_PostSubject').maxLength = 60;
